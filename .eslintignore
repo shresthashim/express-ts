@@ -1,0 +1,21 @@
+dist/# Ignore node_modules directory
+node_modules/
+
+# Ignore build output directory
+dist/
+
+# Ignore logs
+*.log
+
+# Ignore coverage reports
+coverage/
+
+# Ignore any specific TypeScript configuration files
+tsconfig.build.json
+tsconfig.prod.json
+
+# Ignore test files if you want to exclude them from linting
+**/*.spec.ts
+**/*.test.ts
+
+# Ignore any other files or directories as needed

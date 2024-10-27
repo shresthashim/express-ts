@@ -1,0 +1,33 @@
+
+echo 'Checking formatting, linting, type checks, and building your project before committing...'
+
+# Check Prettier standards
+npm run check-format ||
+(
+    echo "Prettier Check Failed. Run npm run format, add changes, and try committing again."
+    false
+)
+
+# Check ESLint Standards
+npm run check-lint ||
+(
+    echo "ESLint Check Failed. Make the required changes listed above, add changes, and try committing again."
+    false
+)
+
+# Check TypeScript standards
+npm run check-types ||
+(
+    echo "Type check failed. Make the required changes and try committing again."
+    false
+)
+
+# Build the project
+npm run build ||
+(
+    echo "Build failed: View the errors above to see why."
+    false
+)
+
+# If everything passes... now we can commit
+echo "All checks passed. Ready to commit."

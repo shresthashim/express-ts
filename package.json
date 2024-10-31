@@ -13,17 +13,9 @@
     "format": "prettier --write .",
     "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/J-Chalise/mahadaan-api.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/J-Chalise/mahadaan-api/issues"
-  },
-  "homepage": "https://github.com/J-Chalise/mahadaan-api#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
